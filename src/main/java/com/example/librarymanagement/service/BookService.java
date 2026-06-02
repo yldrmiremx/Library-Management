@@ -19,36 +19,29 @@ public class BookService {
         this.bookRepository = bookRepository;
     }
 
-    // Kitap listeleme
     public List<book> getAllBooks() {
         return bookRepository.findAll();
     }
 
-    // Kitap ekleme
     public book saveBook(book book) {
         return bookRepository.save(book);
     }
 
-    // Kitap silme
     public void deleteBook(Long id) {
         bookRepository.deleteById(id);
     }
-    // Başlığa göre arama
     public List<book> searchBooks(String title) {
         return bookRepository.findByTitleContaining(title);
     }
 
-    // Duruma göre filtreleme
     public List<book> getAvailableBooks(boolean available) {
         return bookRepository.findByAvailable(available);
     }
 
-    // Kitap var mı
     public boolean existsBook(String title) {
         return bookRepository.existsByTitle(title);
     }
 
-    // Son 5 kitap
     public List<book> latestBooks() {
         return bookRepository.findTop5ByOrderByIdDesc();
     }
