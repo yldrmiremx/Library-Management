@@ -3,7 +3,7 @@ Proje Hakkında
 Bu proje, Spring Boot kullanılarak geliştirilmiş bir Kütüphane Otomasyonu REST API uygulamasıdır.
 Projenin amacı kitap kayıtlarını yönetmek, CRUD işlemlerini gerçekleştirmek, veri doğrulama yapmak ve kullanıcı yetkilendirmesi sağlamaktır.
 Kullanılan Teknolojiler
-Java 21
+Java 17
 Spring Boot
 Spring Data JPA
 Microsoft SQL Server
